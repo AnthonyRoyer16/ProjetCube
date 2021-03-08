@@ -11,7 +11,7 @@ function DisplayAllUsers() {
         });
     }, []);
 
-    const renderPost = () => {
+    const RenderUsers = () => {
         if (!users) {
             return (
                 <tr>
@@ -33,7 +33,7 @@ function DisplayAllUsers() {
                 <td>{user.email}</td>
             </tr>
         ))
-    }
+    };
 
 
     return (
@@ -47,7 +47,7 @@ function DisplayAllUsers() {
                     </tr>
                 </thead>
                 <tbody>
-                    {renderPost()}
+                     {RenderUsers()}
                 </tbody>
             </table>
         </div>
